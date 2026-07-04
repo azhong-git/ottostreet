@@ -1,0 +1,205 @@
+:root {
+  color-scheme: dark;
+  --bg: #0e1117;
+  --panel: #161b24;
+  --border: #262d3a;
+  --text: #d7dce4;
+  --muted: #8a93a3;
+  --bullish: #2ecc8f;
+  --bearish: #f0596b;
+  --neutral: #8a93a3;
+  --accent: #4c8dff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.add-form {
+  display: flex;
+  gap: 6px;
+}
+
+.add-form input {
+  flex: 1;
+  min-width: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.watchlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.watchlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.watchlist li:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.watchlist li.active {
+  background: rgba(76, 141, 255, 0.15);
+  color: var(--accent);
+}
+
+.watchlist .remove {
+  background: transparent;
+  color: var(--muted);
+  padding: 0 6px;
+  font-size: 16px;
+}
+
+.watchlist .remove:hover {
+  color: var(--bearish);
+}
+
+.run-now {
+  margin-top: auto;
+}
+
+.error {
+  color: var(--bearish);
+  font-size: 12px;
+}
+
+.feed {
+  padding: 24px 32px;
+  max-width: 860px;
+}
+
+.feed h2 {
+  margin-top: 0;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.signal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--neutral);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+}
+
+.signal.bullish {
+  border-left-color: var(--bullish);
+}
+
+.signal.bearish {
+  border-left-color: var(--bearish);
+}
+
+.signal header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.signal header time {
+  margin-left: auto;
+}
+
+.badge {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.badge.bullish {
+  color: var(--bullish);
+}
+
+.badge.bearish {
+  color: var(--bearish);
+}
+
+.signal .ticker {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.signal h3 {
+  margin: 8px 0 6px;
+  font-size: 15px;
+}
+
+.signal p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
