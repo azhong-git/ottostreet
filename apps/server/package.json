@@ -1,5 +1,5 @@
 {
-  "name": "@ottostreet/server",
+  "name": "@otterstreet/server",
   "version": "0.1.0",
   "license": "AGPL-3.0-only",
   "type": "module",
@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@fastify/cors": "^10.0.1",
-    "@ottostreet/core": "workspace:*",
-    "@ottostreet/providers": "workspace:*",
-    "@ottostreet/skill-gex": "workspace:*",
+    "@otterstreet/core": "workspace:*",
+    "@otterstreet/providers": "workspace:*",
+    "@otterstreet/skill-gex": "workspace:*",
     "better-sqlite3": "^11.8.0",
     "dotenv": "^16.4.7",
     "fastify": "^5.2.0",

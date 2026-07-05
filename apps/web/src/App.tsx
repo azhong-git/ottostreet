@@ -108,7 +108,7 @@ export default function App() {
     <div className="layout">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h1>ottostreet</h1>
+          <h1>otterstreet</h1>
           <p className="tagline">open-source stock &amp; options signals</p>
 
           <form onSubmit={addSymbol} className="add-form">

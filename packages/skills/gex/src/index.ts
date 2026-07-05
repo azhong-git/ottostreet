@@ -1,4 +1,4 @@
-import type { Signal, SignalSkill, SkillContext } from "@ottostreet/core";
+import type { Signal, SignalSkill, SkillContext } from "@otterstreet/core";
 import { computeGexProfile, type GexProfile } from "./compute.js";
 
 export { computeGexProfile, type GexProfile, type StrikeGex } from "./compute.js";

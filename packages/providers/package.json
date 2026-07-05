@@ -1,5 +1,5 @@
 {
-  "name": "@ottostreet/providers",
+  "name": "@otterstreet/providers",
   "version": "0.1.0",
   "license": "AGPL-3.0-only",
   "type": "module",
@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ottostreet/core": "workspace:*"
+    "@otterstreet/core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.7.3"

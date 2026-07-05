@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { OptionContract } from "@ottostreet/core";
+import type { OptionContract } from "@otterstreet/core";
 import { computeGexProfile } from "./compute.js";
 
 function contract(

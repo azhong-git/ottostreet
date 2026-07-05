@@ -1,4 +1,4 @@
-import type { OptionContract } from "@ottostreet/core";
+import type { OptionContract } from "@otterstreet/core";
 
 export interface StrikeGex {
   strike: number;

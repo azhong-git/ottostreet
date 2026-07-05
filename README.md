@@ -1,4 +1,4 @@
-# ottostreet
+# otterstreet
 
 Open-source stock & options signal engine. Add tickers to a watchlist; pluggable
 **skills** poll market data, filings, and news sources on a schedule and generate
@@ -6,7 +6,7 @@ bullish/bearish signals with plain-language rationale. LLM-assisted skills (news
 social sentiment) use your own OpenAI API key. Not high-frequency by design —
 minute-cadence polling, human-in-the-loop trading.
 
-![ottostreet: a watchlist sidebar beside an NVDA candlestick chart with GEX call wall, put wall, and gamma-flip levels overlaid, above AI-generated bullish/bearish signal cards with plain-English rationale](docs/screenshot.png)
+![otterstreet: a watchlist sidebar beside an NVDA candlestick chart with GEX call wall, put wall, and gamma-flip levels overlaid, above AI-generated bullish/bearish signal cards with plain-English rationale](docs/screenshot.png)
 
 > **Not financial advice.** Signals are heuristics over public data. Do your own research.
 
@@ -76,7 +76,7 @@ skills (GEX, call wall, max pain, put/call) without duplicate fetching.
 ### Writing a skill
 
 ```ts
-import type { SignalSkill } from "@ottostreet/core";
+import type { SignalSkill } from "@otterstreet/core";
 
 export const mySkill: SignalSkill = {
   id: "my-skill",

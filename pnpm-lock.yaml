@@ -20,13 +20,13 @@ importers:
       '@fastify/cors':
         specifier: ^10.0.1
         version: 10.1.0
-      '@ottostreet/core':
+      '@otterstreet/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@ottostreet/providers':
+      '@otterstreet/providers':
         specifier: workspace:*
         version: link:../../packages/providers
-      '@ottostreet/skill-gex':
+      '@otterstreet/skill-gex':
         specifier: workspace:*
         version: link:../../packages/skills/gex
       better-sqlite3:
@@ -97,7 +97,7 @@ importers:
 
   packages/providers:
     dependencies:
-      '@ottostreet/core':
+      '@otterstreet/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -107,7 +107,7 @@ importers:
 
   packages/skills/gex:
     dependencies:
-      '@ottostreet/core':
+      '@otterstreet/core':
         specifier: workspace:*
         version: link:../../core
     devDependencies:

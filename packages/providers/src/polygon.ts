@@ -6,7 +6,7 @@ import type {
   OptionsChainProvider,
   Quote,
   QuoteProvider,
-} from "@ottostreet/core";
+} from "@otterstreet/core";
 
 export interface PolygonConfig {
   apiKey: string;

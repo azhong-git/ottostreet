@@ -6,7 +6,7 @@ import type {
   OptionsChainProvider,
   Quote,
   QuoteProvider,
-} from "@ottostreet/core";
+} from "@otterstreet/core";
 
 /**
  * Deterministic synthetic market data so the app runs end-to-end with zero

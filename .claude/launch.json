@@ -4,13 +4,13 @@
     {
       "name": "server",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["--filter", "@ottostreet/server", "dev"],
+      "runtimeArgs": ["--filter", "@otterstreet/server", "dev"],
       "port": 8420
     },
     {
       "name": "web",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["--filter", "@ottostreet/web", "dev"],
+      "runtimeArgs": ["--filter", "@otterstreet/web", "dev"],
       "port": 5173
     }
   ]

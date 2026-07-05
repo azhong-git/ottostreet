@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
-import type { BarInterval, ProviderRegistry, SignalSkill } from "@ottostreet/core";
+import type { BarInterval, ProviderRegistry, SignalSkill } from "@otterstreet/core";
 import type { Store } from "./db.js";
 import type { Scheduler } from "./scheduler.js";
 

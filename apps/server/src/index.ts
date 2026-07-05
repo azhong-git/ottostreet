@@ -1,8 +1,8 @@
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import type { ProviderRegistry, SignalSkill } from "@ottostreet/core";
-import { MockProvider, PolygonProvider, TradierProvider } from "@ottostreet/providers";
-import { gexSkill } from "@ottostreet/skill-gex";
+import type { ProviderRegistry, SignalSkill } from "@otterstreet/core";
+import { MockProvider, PolygonProvider, TradierProvider } from "@otterstreet/providers";
+import { gexSkill } from "@otterstreet/skill-gex";
 import { loadConfig, type ProviderName, type ServerConfig } from "./config.js";
 import { Store } from "./db.js";
 import { Scheduler } from "./scheduler.js";
@@ -96,7 +96,7 @@ async function main(): Promise<void> {
 
   scheduler.start();
   await app.listen({ port: config.port, host: "127.0.0.1" });
-  console.log(`[server] ottostreet listening on http://127.0.0.1:${config.port} (provider: ${config.provider})`);
+  console.log(`[server] otterstreet listening on http://127.0.0.1:${config.port} (provider: ${config.provider})`);
 
   const shutdown = async () => {
     scheduler.stop();

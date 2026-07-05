@@ -4,7 +4,7 @@ import {
   type ProviderRegistry,
   type SignalSkill,
   type SkillContext,
-} from "@ottostreet/core";
+} from "@otterstreet/core";
 import type { Store } from "./db.js";
 
 export interface RunError {

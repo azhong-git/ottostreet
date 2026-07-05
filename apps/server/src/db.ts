@@ -1,7 +1,7 @@
 import Database from "better-sqlite3";
 import { mkdirSync } from "node:fs";
 import { dirname } from "node:path";
-import type { Signal } from "@ottostreet/core";
+import type { Signal } from "@otterstreet/core";
 
 export interface StoredSignal extends Signal {
   id: number;

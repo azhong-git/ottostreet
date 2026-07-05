@@ -47,7 +47,7 @@ export function loadConfig(): ServerConfig {
     polygonApiKey: process.env.POLYGON_API_KEY ?? "",
     tradierToken: process.env.TRADIER_TOKEN ?? "",
     tradierEnv: process.env.TRADIER_ENV === "production" ? "production" : "sandbox",
-    dbPath: process.env.DB_PATH ?? "data/ottostreet.db",
+    dbPath: process.env.DB_PATH ?? "data/otterstreet.db",
     enableScrapeSkills: process.env.ENABLE_SCRAPE_SKILLS !== "false",
   };
 }
