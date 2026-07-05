@@ -1,4 +1,4 @@
-# otterstreet
+# 🦦 otterstreet 
 
 Open-source stock & options signal engine. Add tickers to a watchlist; pluggable
 **skills** poll market data, filings, and news sources on a schedule and generate
@@ -17,8 +17,8 @@ pnpm install
 pnpm dev
 ```
 
-- Server: http://127.0.0.1:8420 (Fastify + SQLite)
-- Web UI: http://127.0.0.1:5173 (Vite + React, proxies `/api` to the server)
+- Server: http://localhost:8420 (Fastify + SQLite)
+- Web UI: http://localhost:5173 (Vite + React, proxies `/api` to the server)
 
 With no `POLYGON_API_KEY` set, the server falls back to the **mock provider**
 (deterministic synthetic quotes and options chains), so you can add a ticker,
